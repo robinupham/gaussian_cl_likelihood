@@ -10,9 +10,14 @@ import time
 
 import healpy as hp
 import numpy as np
-import pymaster as nmt
 import scipy.linalg
 import scipy.stats
+
+# Workaround to get docs to compile
+try:
+    import pymaster as nmt
+except ImportError:
+    nmt = None
 
 import like_cl_wishart as like_w
 
@@ -588,6 +593,12 @@ def sim_cls_fullsky(n_zbin, pos_pos_in_dir, she_she_in_dir, pos_she_in_dir, lmax
     print(f'Done at: {time.strftime("%c")}')
 
 
+def _check_nmt():
+    if nmt is None:
+        raise ImportError('pymaster must be installed. Please see '
+                          'https://namaster.readthedocs.io/en/latest/installation.html')
+
+
 def flat_bins_linspaced(leff_min, leff_max, bin_size):
     """
     Returns a NaMaster NmtBinFlat object whose effective ells are linearly spaced from leff_min to leff_max (inclusive)
@@ -601,6 +612,7 @@ def flat_bins_linspaced(leff_min, leff_max, bin_size):
     Returns:
         NmtBinFlat: NaMaster flat binning scheme.
     """
+    _check_nmt()
 
     l0 = np.arange(leff_min - bin_size / 2, leff_max + bin_size / 2, bin_size)
     lf = l0 + bin_size
@@ -627,6 +639,7 @@ def sim_flat(n_zbin, cl_filemask, input_lmin, nx, ny, lx, ly, leff_min, leff_max
         n_real (int): Number of realisations to generate.
         save_path (str): Path to save output to.
     """
+    _check_nmt()
 
     # Load input power spectra in the order required by synfast_flat
     cls_ = []
