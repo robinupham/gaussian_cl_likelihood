@@ -1,4 +1,4 @@
-## Code used to produce all figures in in [Upham, Brown & Whittaker 2021, “Sufficiency of a Gaussian power spectrum likelihood for accurate cosmology from upcoming weak lensing surveys”, arXiv:2012.06267](https://arxiv.org/abs/2012.06267).
+## Code used to produce all figures in [Upham, Brown & Whittaker 2021, “Sufficiency of a Gaussian power spectrum likelihood for accurate cosmology from upcoming weak lensing surveys”, arXiv:2012.06267](https://arxiv.org/abs/2012.06267).
 
 ### Documentation
 
