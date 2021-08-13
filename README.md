@@ -14,6 +14,6 @@ Documentation is available at [Read the Docs](https://gaussian-cl-likelihood.rea
 * numpy
 * scipy
 * matplotlib
-* [NPEET](https://github.com/gregversteeg/NPEET)
-* [healpy](https://healpy.readthedocs.io/en/latest/install.html)
-* [pseudo_cl_likelihood](https://github.com/robinupham/pseudo_cl_likelihood)
+* [NPEET](https://github.com/gregversteeg/NPEET) (only for `mutual_info` module)
+* [healpy](https://healpy.readthedocs.io/en/latest/install.html) (only for `simulation` module)
+* [pseudo_cl_likelihood](https://github.com/robinupham/pseudo_cl_likelihood) (only for `pcl_like` module)
