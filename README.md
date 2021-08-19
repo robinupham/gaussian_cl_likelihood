@@ -17,3 +17,4 @@ Documentation is available at [Read the Docs](https://gaussian-cl-likelihood.rea
 * [NPEET](https://github.com/gregversteeg/NPEET) (only needed for `mutual_info` module)
 * [healpy](https://healpy.readthedocs.io/en/latest/install.html) (only needed for `simulation` module)
 * [pseudo_cl_likelihood](https://github.com/robinupham/pseudo_cl_likelihood) (only needed for `pcl_like` module)
+* [NaMaster](https://namaster.readthedocs.io/en/latest/installation.html) (only needed for flat-sky functionality within `simulation` module)
