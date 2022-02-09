@@ -155,7 +155,7 @@ def load_cls(n_zbin, pos_pos_dir, she_she_dir, pos_she_dir, lmax=None, lmin=0):
                 else:
                     bin2, bin1 = bins
 
-            cl_path = os.path.join(f'bin_{bin1}_{bin2}.txt')
+            cl_path = os.path.join(cl_dir, f'bin_{bin1}_{bin2}.txt')
 
             # Load with appropriate ell range
             max_rows = None if lmax is None else (lmax - lmin + 1)
