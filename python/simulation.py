@@ -19,7 +19,7 @@ try:
 except ImportError:
     nmt = None
 
-from . import like_cl_wishart as like_w
+import gaussian_cl_likelihood.python.like_cl_wishart as like_w
 
 
 class FieldType(enum.Enum):
