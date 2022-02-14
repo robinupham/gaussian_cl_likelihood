@@ -11,7 +11,7 @@ import numpy as np
 
 import gaussian_cl_likelihood.python.like_cl_gauss as like_g
 import gaussian_cl_likelihood.python.like_cl_wishart as like_w
-import gaussian_cl_likelihood.python.posteriors
+import gaussian_cl_likelihood.python.posteriors as posteriors
 
 
 def run_like_cl_wishart(grid_dir, varied_params, save_path, n_zbin, obs_pos_pos_dir, obs_she_she_dir, obs_pos_she_dir,
