@@ -19,7 +19,7 @@ try:
 except ImportError:
     nmt = None
 
-import like_cl_wishart as like_w
+from . import like_cl_wishart as like_w
 
 
 class FieldType(enum.Enum):

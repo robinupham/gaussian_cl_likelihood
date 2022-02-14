@@ -9,9 +9,9 @@ import warnings
 
 import numpy as np
 
-import like_cl_gauss as like_g
-import like_cl_wishart as like_w
-import posteriors
+from . import like_cl_gauss as like_g
+from . import like_cl_wishart as like_w
+from . import posteriors
 
 
 def run_like_cl_wishart(grid_dir, varied_params, save_path, n_zbin, obs_pos_pos_dir, obs_she_she_dir, obs_pos_she_dir,
