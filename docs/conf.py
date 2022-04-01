@@ -13,6 +13,7 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../python'))
+autodoc_mock_imports = ['npeet']
 
 
 # -- Project information -----------------------------------------------------
