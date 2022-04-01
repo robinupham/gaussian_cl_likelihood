@@ -13,7 +13,8 @@
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../python'))
-autodoc_mock_imports = ['healpy', 'matplotlib', 'npeet', 'numpy', 'pseudo_cl_likelihood', 'scipy']
+autodoc_mock_imports = ['gaussian_cl_likelihood', 'healpy', 'matplotlib', 'npeet', 'numpy', 'pseudo_cl_likelihood',
+                        'scipy']
 
 
 # -- Project information -----------------------------------------------------
